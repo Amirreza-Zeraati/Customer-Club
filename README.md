@@ -1,4 +1,4 @@
-# Dorp a post
+# Drop a post
 # Django Authentication & User Management with Post CRUD
 
 This project showcases a full-featured Django web application with user authentication and a CRUD (Create, Read, Update, Delete) system for posts, inspired by social platforms like Twitter. Users can register, log in, and manage their profiles, as well as create and interact with posts.
