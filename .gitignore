@@ -8,8 +8,7 @@ node_modules
 .env.*.local
 
 .venv
-.idea
-
+.env
 # Log files
 npm-debug.log*
 yarn-debug.log*
@@ -24,3 +23,52 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+__pycache__
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.cover
+*.tox
+*.nox
+*.coverage
+*.hypothesis
+.pytest_cache/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+/static/
+media/
+
+# Virtualenv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-generated files
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# PyCharm
+
+# MySQL
+*.sql
+
+# Coverage directory used by tools like coveralls
+.coverage/
