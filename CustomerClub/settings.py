@@ -89,7 +89,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'customerclub',
+        'NAME': 'dropapost',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'db',

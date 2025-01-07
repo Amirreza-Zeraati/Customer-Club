@@ -16,22 +16,26 @@ This project showcases a full-featured Django web application with user authenti
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Amirreza-Zeraati/drop-a-post.git
+   cd cloud_computing_Project
    ```
-2. Install dependencies:
+2. Create a .env file in the root directory with the following format:
    ```bash
-   pip install -r requirements.txt
+   DATABASE_NAME=book_manager
+   DATABASE_USER=book_user
+   DATABASE_PASSWORD=your_password
+   DATABASE_HOST=postgres_db
+   DATABASE_PORT=5432
    ```
-3. Apply migrations and run the server:
+3. Build and start the containers:
    ```bash
-   python manage.py migrate
-   python manage.py runserver
+   docker-compose -f docker-compose.db.yml up --build -d
+   docker-compose -f docker-compose.app.yml up --build -d
    ```
+4. Now you can access the application:
+   http://localhost:8000
 
 ## Usage
+- Create a superuser to access the admin side.
 - Register or log in to access the post features.
 - Create new posts, view all posts in the feed, and manage your own posts with options to edit or delete.
-
---- 
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=F70000&width=435&lines=Under+Construction+...)](https://git.io/typing-svg)
