@@ -21,16 +21,23 @@ This project showcases a full-featured Django web application with user authenti
    ```
 2. Create a .env file in the root directory with the following format:
    ```env
-   DATABASE_NAME=dropapost
-   DATABASE_USER=postgres
-   DATABASE_PASSWORD=postgres
-   DATABASE_HOST=db
-   DATABASE_PORT=5432
+   POSTGRES_DB=dropapost
+   POSTGRES_USER=postgres
+   POSTGRES_PASSWORD=postgres
+   POSTGRES_HOST=db
+   POSTGRES_PORT=5432
+
    ```
-3. Build and start the containers:
+3. Build and start the containers
+   for v1 :
    ```bash
    docker-compose -f docker-compose.db.yml up --build -d
    docker-compose -f docker-compose.app.yml up --build -d
+   ```
+   for v2 :
+   ```bash
+   docker compose -f docker-compose.db.yml up --build -d
+   docker compose -f docker-compose.app.yml up --build -d
    ```
 4. Now you can access the application:
    http://localhost:8000
