@@ -17,14 +17,14 @@ This project showcases a full-featured Django web application with user authenti
 1. Clone the repository:
    ```bash
    git clone https://github.com/Amirreza-Zeraati/drop-a-post.git
-   cd cloud_computing_Project
+   cd drop-a-post
    ```
 2. Create a .env file in the root directory with the following format:
-   ```bash
-   DATABASE_NAME=book_manager
-   DATABASE_USER=book_user
-   DATABASE_PASSWORD=your_password
-   DATABASE_HOST=postgres_db
+   ```env
+   DATABASE_NAME=dropapost
+   DATABASE_USER=postgres
+   DATABASE_PASSWORD=postgres
+   DATABASE_HOST=db
    DATABASE_PORT=5432
    ```
 3. Build and start the containers:
